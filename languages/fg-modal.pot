@@ -1,0 +1,183 @@
+# Copyright (C) 2025 Fabian Genthner
+# This file is distributed under the same license as the FG Modal plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: FG Modal 1.04\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fg-modal\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-07T11:29:49+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: fg-modal\n"
+
+#. Plugin Name of the plugin
+#: index.php
+msgid "FG Modal"
+msgstr ""
+
+#. Description of the plugin
+#: index.php
+msgid "A block which renders a pop-up that appears on a page and disables all other content."
+msgstr ""
+
+#. Author of the plugin
+#: index.php
+msgid "Fabian Genthner"
+msgstr ""
+
+#. Author URI of the plugin
+#: index.php
+msgid "https://fabiangenthner.de"
+msgstr ""
+
+#: src/fg-modal/edit.js:85
+msgid "Positioning"
+msgstr ""
+
+#: src/fg-modal/edit.js:87
+msgid "Type"
+msgstr ""
+
+#: src/fg-modal/edit.js:98
+msgid "Position"
+msgstr ""
+
+#: src/fg-modal/edit.js:101
+msgid "Top"
+msgstr ""
+
+#: src/fg-modal/edit.js:102
+msgid "Right"
+msgstr ""
+
+#: src/fg-modal/edit.js:103
+msgid "Bottom"
+msgstr ""
+
+#: src/fg-modal/edit.js:104
+msgid "Left"
+msgstr ""
+
+#: src/fg-modal/edit.js:112
+msgid "Maximum width of modal content"
+msgstr ""
+
+#: src/fg-modal/edit.js:122
+msgid "Setup"
+msgstr ""
+
+#: src/fg-modal/edit.js:124
+msgid "Show modal on page load"
+msgstr ""
+
+#: src/fg-modal/edit.js:131
+msgid "Show after"
+msgstr ""
+
+#: src/fg-modal/edit.js:132
+msgid "Enter time value in milliseconds"
+msgstr ""
+
+#: src/fg-modal/edit.js:141
+msgid "Selector"
+msgstr ""
+
+#: src/fg-modal/edit.js:142
+msgid "Use CSS selector to choose which HTML element should make the modal visible on click."
+msgstr ""
+
+#: src/fg-modal/edit.js:148
+msgid "e.g. #my-button, .my-link"
+msgstr ""
+
+#: src/fg-modal/edit.js:153
+msgid "Styling"
+msgstr ""
+
+#: src/fg-modal/edit.js:154
+msgid "Text Color"
+msgstr ""
+
+#: src/fg-modal/edit.js:160
+msgid "Background Color"
+msgstr ""
+
+#: src/fg-modal/edit.js:166
+msgid "Backdrop Color"
+msgstr ""
+
+#: src/fg-modal/edit.js:175
+msgid "Cookies"
+msgstr ""
+
+#: src/fg-modal/edit.js:177
+msgid "Set cookie?"
+msgstr ""
+
+#: src/fg-modal/edit.js:187
+msgid "Expires after"
+msgstr ""
+
+#: src/fg-modal/edit.js:188
+msgid "Enter time value in minutes"
+msgstr ""
+
+#: src/fg-modal/edit.js:197
+msgid "React to other cookies?"
+msgstr ""
+
+#: src/fg-modal/edit.js:198
+msgid "Should modal react according to cookies set by other plugins or services?"
+msgstr ""
+
+#: src/fg-modal/edit.js:210
+msgid "Other cookies"
+msgstr ""
+
+#: src/fg-modal/edit.js:211
+msgid "Enter name of one or more cookies – if one of them is present on the client, the modal won't show up."
+msgstr ""
+
+#: src/fg-modal/edit.js:217
+msgid "cookie1,cookie2"
+msgstr ""
+
+#: src/fg-modal/edit.js:223
+msgid "Timing"
+msgstr ""
+
+#: src/fg-modal/edit.js:225
+msgid "Enable Timing?"
+msgstr ""
+
+#: src/fg-modal/edit.js:226
+msgid "Time when modal is displayed on site"
+msgstr ""
+
+#: src/fg-modal/edit.js:238
+msgid "Show"
+msgstr ""
+
+#: src/fg-modal/edit.js:244
+msgid "Hide"
+msgstr ""
+
+#: src/fg-modal/edit.js:248
+msgid "until"
+msgstr ""
+
+#: build/fg-modal/block.json
+#: src/fg-modal/block.json
+msgctxt "block title"
+msgid "FG Modal"
+msgstr ""
+
+#: build/fg-modal/block.json
+#: src/fg-modal/block.json
+msgctxt "block description"
+msgid "A block which renders a pop-up that appears on a page and disables all other content."
+msgstr ""
