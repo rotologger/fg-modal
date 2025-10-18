@@ -31,6 +31,18 @@
 		"selector": {
 			"type": "string"
 		},
+		"enablePageDependent": {
+			"type": "boolean",
+			"default": false
+		},
+		"pageMode": {
+			"enum": ["show", "hide"],
+			"default": "show"
+		},
+		"pageIds": {
+			"type": "string",
+			"default": ""
+		},
 		"maxWidth": {
 			"type": "number",
 			"default": 500
@@ -68,7 +80,7 @@
 			"default": false
 		},
 		"timingMode": {
-			"type": "string",
+			"enum": ["show", "hide"],
 			"default": "show"
 		},
 		"date": {

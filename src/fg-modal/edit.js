@@ -27,6 +27,9 @@ export default function Edit({ attributes, setAttributes }) {
 		showOnPageLoad,
 		delay,
 		selector,
+		enablePageDependent,
+		pageMode,
+		pageIds,
 		maxWidth,
 		setCookie,
 		expiresAfter,
@@ -120,6 +123,7 @@ export default function Edit({ attributes, setAttributes }) {
 
 				{/* SETUP */}
 				<PanelBody title={__("Setup", "fg-modal")} initialOpen={false}>
+					{/* Show on page load */}
 					<ToggleControl
 						label={__("Show modal on page load", "fg-modal")}
 						checked={showOnPageLoad}
@@ -145,8 +149,47 @@ export default function Edit({ attributes, setAttributes }) {
 						)}
 						value={selector}
 						onChange={(selector) => setAttributes({ selector })}
-						placeholder={__("e.g. #my-button, .my-link", "fg-modal")}
+						placeholder={__("e.g. #my-button,.my-link", "fg-modal")}
 					/>
+
+					{/* Show / hide on certain pages */}
+					<ToggleControl
+						label={__("Show / hide modal on certain pages / posts", "fg-modal")}
+						checked={enablePageDependent}
+						onChange={() =>
+							setAttributes({ enablePageDependent: !enablePageDependent })
+						}
+					/>
+
+					{enablePageDependent && (
+						<>
+							<ButtonGroup>
+								<Button
+									isPressed={pageMode === "show"}
+									onClick={() => setAttributes({ pageMode: "show" })}
+								>
+									{__("Show", "fg-modal")}
+								</Button>
+								<Button
+									isPressed={pageMode === "hide"}
+									onClick={() => setAttributes({ pageMode: "hide" })}
+								>
+									{__("Hide", "fg-modal")}
+								</Button>
+							</ButtonGroup>
+
+							<TextControl
+								label={__("Pages / Posts", "fg-modal")}
+								help={__(
+									"Enter the ids of pages and posts which should be affected by the setting (comma-separated).",
+									"fg-modal",
+								)}
+								value={pageIds}
+								onChange={(pageIds) => setAttributes({ pageIds })}
+								placeholder={__("e.g. 1,23,678")}
+							/>
+						</>
+					)}
 				</PanelBody>
 
 				{/* STYLING */}
