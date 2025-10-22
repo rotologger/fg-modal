@@ -10,27 +10,12 @@
  * Author URI:	      https://fabiangenthner.de
  * Text Domain:       fg-modal
  * Domain Path:       /languages
- * @package CreateBlock
  */
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if (! defined('ABSPATH')) exit;
 
 function fg_modal_init()
 {
-    register_block_type(__DIR__ . '/build/fg-modal');
-
-    load_plugin_textdomain(
-        'fg-modal',
-        false,
-        'fg-modal/languages'
-    );
-
-    wp_set_script_translations(
-        'create-block-fg-modal-editor-script',
-        'fg-modal',
-        plugin_dir_path(__FILE__) . 'languages'
-    );
+    register_block_type(__DIR__ . '/build');
 }
 add_action('init', 'fg_modal_init');
