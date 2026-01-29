@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/fg-modal",
+	"version": "1.0",
+	"title": "FG Modal",
+	"category": "widgets",
+	"icon": "block-default",
+	"description": "A block which renders a pop-up that appears on a page and disables all other content.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {
+			"text": true,
+			"background": true
+		}
+	},
+	"attributes": {
+		"showOnPageLoad": {
+			"type": "boolean",
+			"default": false
+		},
+		"delay": {
+			"type": "number",
+			"default": 2000
+		},
+		"selector": {
+			"type": "string"
+		},
+		"maxWidth": {
+			"type": "number",
+			"default": 900
+		},
+		"setCookie": {
+			"type": "boolean",
+			"default": false
+		},
+		"expiresAfter": {
+			"type": "number",
+			"default": 1440
+		},
+		"type": {
+			"type": "string",
+			"default": "modal"
+		},
+		"position": {
+			"type": "string",
+			"default": "bottom"
+		}
+	},
+	"textdomain": "fg-modal",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render.php",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

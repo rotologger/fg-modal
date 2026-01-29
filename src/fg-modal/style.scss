@@ -1,0 +1,63 @@
+.wp-block-create-block-fg-modal {
+	position: fixed;
+	z-index: 100;
+
+	.inner {
+		width: 100%;
+		background-color: white;
+		position: relative;
+		padding: 2rem;
+	}
+
+	&.modal {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&.hidden {
+			display: none;
+		}
+
+		.inner {
+			box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+			margin-bottom: 2rem;
+		}
+	}
+
+	&.slide-in {
+		left: 0;
+		right: 0;
+		transform: translateY(0);
+		transition: transform 0.75s ease-in-out;
+
+		&.top {
+			top: 0;
+
+			&.hidden {
+				transform: translateY(-100%);
+			}
+		}
+
+		&.bottom {
+			bottom: 0;
+
+			&.hidden {
+				transform: translateY(100%);
+			}
+		}
+	}
+
+	.close-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 2.5rem;
+		height: auto;
+		cursor: pointer;
+	}
+}
